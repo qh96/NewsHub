@@ -1,0 +1,10 @@
+<view class="wrap-container">
+  <view class="text-div">
+    <text class="aritcle-title">{{title}}</text>
+    <view class='page-head-line'></view>
+    <text class="aritcle-text">{{content}}</text>
+    <!-- <text class="aritcle-url">{{content}}</text> -->
+    <button bindtap='toPage' id="{{url}}">阅读原文</button>
+    
+  </view>
+</view>

@@ -1,0 +1,22 @@
+<view class="wrap-container">
+  <view class="wrap-title">
+    Tect News
+  </view>
+  <block wx:for="{{feeds}}">
+    <view class='list' data-para="{{item}}" bindtap="tapItem">
+      <view class='view_header'>
+        <text class='list_header'>{{item.publishedAt}}</text>
+      </view>
+      <text class='list_title'>{{item.title}}</text>
+      <view class='view_intro'>
+        <text class='list_intro'>{{item.description}}</text>
+      </view>
+      
+      <view class='share-img'>
+      <text class='list_footer'>{{item.author}} 报道</text>
+        <image src='/assets/share.png' data-para="{{item}}" catchtap='share' hover-stop-propagation='true'>
+        </image>
+      </view>
+    </view>
+  </block>
+</view>

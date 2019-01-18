@@ -1,0 +1,29 @@
+/**app.wxss**/
+
+page {
+  background-color: #f5f5f5;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+
+.wrap-container {
+  overflow: hidden;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.wrap-title {
+  position: relative;
+  margin: 10px 15px;
+  line-height: 25px;
+  font-size: 25px;
+  color: #666;
+}
